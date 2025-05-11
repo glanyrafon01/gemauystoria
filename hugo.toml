@@ -1,6 +1,24 @@
 baseURL = "https://www.gemauystoria.cymru/"
 languageCode = "cy"
+defaultContentLanguage = "cy"
+defaultContentLanguageInSubdir = true  # Set to false if you don't want /cy/ for the default language
+
+[languages]
+
+[languages.cy]
+contentDir = "content/cy"
+languageName = "Cymraeg"
+languageCode = "cy"
+weight = 1
 title = "Gemau Ystoria"
+
+[languages.en]
+ContentDir = "content/en"
+languageName = "English"
+languageCode= "en"
+weight = 2
+title = "Gemau Ystoria"
+
 [module]
   [[module.imports]]
     path = "github.com/theNewDynamic/gohugo-theme-ananke/v2"

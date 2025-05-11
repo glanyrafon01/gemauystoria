@@ -1,0 +1,24 @@
+{{ $permalink := .RelPermalink }}
+<article class="pa3 pa4-ns nested-copy-line-height">
+  {{ with .Params.image }}
+    <div class="featured-image">
+      <a href="{{ $permalink }}">
+        <img src="{{ . | relURL }}" class="w-100" alt="{{ $.Title }}" />
+      </a>
+    </div>
+  {{ end }}
+
+  <h1 class="f3 near-black">
+    <a href="{{ $permalink }}" class="link black dim">
+      {{ .Title }}
+    </a>
+  </h1>
+
+  <p class="measure lh-copy">
+    {{ .Summary }}
+  </p>
+
+  <a href="{{ $permalink }}" class="f6 link blue dim">
+    {{ i18n "read_more" }} &rarr;
+  </a>
+</article>
