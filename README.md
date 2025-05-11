@@ -91,3 +91,61 @@ Each page pair uses:
 ## 📄 License
 
 This repository contains content authored by Gemau Ystoria and contributors. See individual files for licensing where applicable.
+
+
+---
+
+## ➕ Adding Translated Pages
+
+To add a new page in both Welsh and English:
+
+### 1. Create the Files
+
+Use parallel file names for consistency:
+
+```bash
+touch content/cy/eiddo.md
+touch content/en/property.md
+```
+
+### 2. Add Front Matter with Shared `translationKey`
+
+Example `content/cy/eiddo.md`:
+
+```markdown
+---
+title: "Eiddo"
+translationKey: "property"
+url: "/property/"
+---
+Mae hwn yn dudalen sampl yn Gymraeg.
+```
+
+Example `content/en/property.md`:
+
+```markdown
+---
+title: "Property"
+translationKey: "property"
+url: "/property/"
+---
+This is a sample page in English.
+```
+
+### 3. Verify
+
+Run:
+
+```bash
+hugo server
+```
+
+Then visit:
+
+- `http://localhost:1313/cy/property/`
+- `http://localhost:1313/en/property/`
+
+The language switcher will appear if `.Translations` is correctly linked by `translationKey`.
+
+---
+
