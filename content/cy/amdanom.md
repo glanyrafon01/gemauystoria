@@ -1,6 +1,6 @@
 ---
 title: "Amdanom Ni"
-url: "cy/amdanom/"
+url: "/cy/amdanom/"
 translationKey: "amdanom"
 ---
 

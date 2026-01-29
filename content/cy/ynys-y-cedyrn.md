@@ -1,6 +1,6 @@
 ---
 title: "Ynys y Cedyrn"
-url: "cy/ynys-y-cedyrn/"
+url: "/cy/ynys-y-cedyrn/"
 translationKey: "ynys_y_cedyrn"
 ---
 

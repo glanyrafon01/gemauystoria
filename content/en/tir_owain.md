@@ -1,6 +1,6 @@
 ---
 title: "Tir Owain"
-url: "en/tir_owain/"
+url: "/en/tir_owain/"
 translationKey: "tir_owain"
 ---
 
