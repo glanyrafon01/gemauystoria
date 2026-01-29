@@ -20,6 +20,7 @@ The site is built with [Hugo](https://gohugo.io/) using the [Ananke theme](https
 - `layouts/`: Custom layout overrides
 - `i18n/cy.toml`: Welsh interface translations
 - `.github/workflows/deploy.yml`: GitHub Actions workflow for publishing
+- `assets/`: Source files for downloads and Hugo Pipes
 
 ---
 
@@ -149,3 +150,14 @@ The language switcher will appear if `.Translations` is correctly linked by `tra
 
 ---
 
+## 📦 PDF Downloads
+
+PDFs stored in `assets/` are published via the `pdf-download` shortcode in `layouts/shortcodes/pdf-download.html`. This copies the file into `/downloads/` during the build and renders a download link in content.
+
+Example usage:
+
+```markdown
+{{< pdf-download src="Ynys y Cedyrn MVP.pdf" dest="ynys-y-cedyrn-mvp.pdf" label="Lawrlwytho'r PDF" note="Mae'r lawrlwythiad am ddim ond mae rhodd yn cael ei groesawu." >}}
+```
+
+---
