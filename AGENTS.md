@@ -70,6 +70,7 @@ Guidance for agentic coding in this repository.
 ## Data, assets, and static files
 - Use `static/` for images or files that must be copied verbatim to the site root.
 - Use `assets/` for pipeline-processed files (if you add any Hugo Pipes usage).
+- PDF downloads are published from `assets/` via the `pdf-download` shortcode.
 - Do not commit local build output in `public/` or `resources/`.
 - `public-test/` appears to be a committed build; do not edit by hand.
 - If `public-test/` must be updated, regenerate via Hugo rather than manual edits.
