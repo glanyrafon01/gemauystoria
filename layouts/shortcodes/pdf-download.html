@@ -1,0 +1,14 @@
+{{- $src := .Get "src" -}}
+{{- $dest := .Get "dest" -}}
+{{- $label := .Get "label" | default "Lawrlwytho" -}}
+{{- $note := .Get "note" -}}
+{{- $pdf := resources.Get $src -}}
+{{- if $pdf -}}
+  {{- $out := $pdf | resources.Copy (printf "downloads/%s" $dest) -}}
+  <p><a href="{{ $out.RelPermalink }}">{{ $label }}</a></p>
+  {{- with $note -}}
+    <p>{{ . }}</p>
+  {{- end -}}
+{{- else -}}
+  <p>Ni ellir dod o hyd i'r ffeil lawrlwytho.</p>
+{{- end -}}

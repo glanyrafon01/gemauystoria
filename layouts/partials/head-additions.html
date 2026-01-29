@@ -1,0 +1,116 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap");
+
+  :root {
+    --gy-bg: #e9edf3;
+    --gy-panel: #f6f7fa;
+    --gy-panel-2: #ffffff;
+    --gy-text: #1b2433;
+    --gy-muted: #4f5d70;
+    --gy-accent: #d97706;
+    --gy-accent-2: #0f766e;
+    --gy-border: rgba(27, 36, 51, 0.12);
+    --gy-shadow: 0 16px 40px rgba(27, 36, 51, 0.12);
+  }
+
+  html,
+  body {
+    background: radial-gradient(1200px 600px at 10% -10%, rgba(15, 118, 110, 0.08), transparent 60%),
+      radial-gradient(1200px 700px at 90% 0%, rgba(217, 119, 6, 0.08), transparent 60%),
+      linear-gradient(180deg, #eef2f7 0%, #e6ebf2 100%);
+    color: var(--gy-text);
+    font-family: "Source Sans 3", "Nimbus Sans", sans-serif;
+  }
+
+  body {
+    letter-spacing: 0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Fraunces", "Georgia", serif;
+    color: var(--gy-text);
+    letter-spacing: 0.02em;
+  }
+
+  h2,
+  h3 {
+    border-left: 3px solid var(--gy-accent);
+    padding-left: 0.75rem;
+  }
+
+  main {
+    max-width: 980px;
+    margin: 2.5rem auto 4rem;
+    padding: clamp(1.5rem, 3vw, 3rem);
+    background: linear-gradient(180deg, var(--gy-panel) 0%, var(--gy-panel-2) 100%);
+    border: 1px solid var(--gy-border);
+    border-radius: 18px;
+    box-shadow: var(--gy-shadow);
+  }
+
+  p,
+  li {
+    color: var(--gy-text);
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+
+  a,
+  .link {
+    color: var(--gy-accent);
+  }
+
+  a:hover,
+  .link:hover {
+    color: var(--gy-accent-2);
+  }
+
+  .near-black,
+  .black {
+    color: var(--gy-text) !important;
+  }
+
+  .bg-white,
+  .bg-near-white {
+    background-color: transparent !important;
+  }
+
+  header,
+  .site-header {
+    background: transparent;
+  }
+
+  nav a {
+    color: var(--gy-text) !important;
+  }
+
+  nav a:hover {
+    color: var(--gy-accent) !important;
+  }
+
+  article {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid var(--gy-border);
+    border-radius: 12px;
+  }
+
+  .measure {
+    max-width: 40rem;
+  }
+
+  @media (max-width: 720px) {
+    main {
+      margin: 1.5rem 1rem 3rem;
+    }
+
+    h2,
+    h3 {
+      padding-left: 0.5rem;
+    }
+  }
+</style>
